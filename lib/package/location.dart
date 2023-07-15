@@ -39,7 +39,7 @@ class _LocationState extends State<Location> {
         "flag":instance.flag,
         "actual_time":instance.actual_time,
         "isDayTime":instance.isDayTime,
-        "date":instance.Date,
+
 
 
     });

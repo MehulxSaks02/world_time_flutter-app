@@ -7,7 +7,6 @@ class Time{
   late String actual_time;//time in that paricular location
   late String flag;//url to an asset flag icon
   late bool isDayTime;// true or false based on isdaytime or not
-  late String Date;
 
   Time({required this.location,required this.url,required this.flag});
 
@@ -38,14 +37,13 @@ class Time{
      // creating the datetime object
 
      DateTime now=DateTime.parse(time);
-     DateTime date=DateTime.parse(Date);
      now=now.add(Duration(hours: int.parse(offset_hours),minutes: int.parse(offset_minutes)));
 
      // set the time property
 
      isDayTime= now.hour > 6 && now.hour< 19? true:false;
      actual_time=DateFormat.jm().format(now);
-     Date= DateFormat.jm().format(date);
+
    }
    catch(e){
      print("error caught:$e");

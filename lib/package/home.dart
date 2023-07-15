@@ -75,11 +75,7 @@ class _HomeState extends State<Home> {
                   color:bgcolor,
                 ),),
                 SizedBox(height: 20.0,),
-                Text(data['date'],
-                style: TextStyle(
-                  fontSize: 35.0,
-                  color: bgcolor,
-                ),),
+
 
               ],
 
@@ -87,6 +83,7 @@ class _HomeState extends State<Home> {
           ),
         ),
       ),
+
     );
   }
 }
